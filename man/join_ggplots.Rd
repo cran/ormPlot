@@ -4,8 +4,12 @@
 \alias{join_ggplots}
 \title{Join two ggplot objects side by side}
 \usage{
-join_ggplots(leftplot, rightplot, plot.widths = c(0.5, 0.5),
-  title = "Odds Ratio")
+join_ggplots(
+  leftplot,
+  rightplot,
+  plot.widths = c(0.5, 0.5),
+  title = "Odds Ratio"
+)
 }
 \arguments{
 \item{leftplot}{the left side plot}

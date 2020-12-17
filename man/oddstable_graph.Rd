@@ -4,8 +4,13 @@
 \alias{oddstable_graph}
 \title{Make a ggplot table}
 \usage{
-oddstable_graph(x, digits = 3, theme = ggplot2::theme_get(),
-  header = NULL, row.names.y = NULL)
+oddstable_graph(
+  x,
+  digits = 3,
+  theme = ggplot2::theme_get(),
+  header = NULL,
+  row.names.y = NULL
+)
 }
 \arguments{
 \item{x}{a \code{matrix} or a \code{data.frame}}

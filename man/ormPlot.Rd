@@ -3,7 +3,6 @@
 \docType{package}
 \name{ormPlot}
 \alias{ormPlot}
-\alias{ormPlot-package}
 \title{ormPlot: Plotting ordinal regression models from \code{\link[rms]{rms}}}
 \description{
 The package is an extension to the \code{\link[rms]{rms}} package that

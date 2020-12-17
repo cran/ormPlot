@@ -11,6 +11,11 @@ test_model_001<-rms::orm(educ_3 ~ Rural + sex + max_SEP_3 + n_siblings +
                            cran_rzs + height_rzs +  FW_rzs + YOBc +
                            (YOBc * sex) + (YOBc * Rural), data = test_data)
 
+expect_doppelganger <- function(title, fig, path = NULL, ...) {
+  testthat::skip_if_not_installed("vdiffr")
+  vdiffr::expect_doppelganger(title, fig, path = path, ...)
+}
+
 test_that("returns a ggplot object", {
   p <- plot.orm(test_model_001, cran_rzs, "Rural")
   expect_true(ggplot2::is.ggplot(p))
@@ -18,12 +23,12 @@ test_that("returns a ggplot object", {
 
 test_that("plotting test data generates the expected image", {
   p <- plot.orm(test_model_001, "cran_rzs", "max_SEP_3",  c("Rural", "sex"))
-  vdiffr::expect_doppelganger("prediction_ggplot_article", p)
+  expect_doppelganger("prediction_ggplot_article", p)
 })
 
 test_that("can plot with only one value", {
   p <- plot.orm(test_model_001, cran_rzs)
-  vdiffr::expect_doppelganger("prediction_ggplot_simplest", p)
+  expect_doppelganger("prediction_ggplot_simplest", p)
 })
 
 
@@ -40,7 +45,7 @@ test_that("plotting test data changes element names and order", {
                                                       "Skilled manual",
                                                       "Non-manual"))
   )
-  vdiffr::expect_doppelganger("prediction_ggplot_article_edited", p)
+  expect_doppelganger("prediction_ggplot_article_edited", p)
 })
 
 test_that("plotting test data accepts no vectors", {
@@ -54,7 +59,7 @@ test_that("plotting test data accepts no vectors", {
                                                   "Skilled manual",
                                                   "Non-manual"))
   )
-  vdiffr::expect_doppelganger("prediction_ggplot_article_edited", p)
+  expect_doppelganger("prediction_ggplot_article_edited", p)
 })
 
 test_that("plotting test data accepts no quotes", {
@@ -68,7 +73,7 @@ test_that("plotting test data accepts no quotes", {
                                                   "Skilled manual",
                                                   "Non-manual"))
   )
-  vdiffr::expect_doppelganger("prediction_ggplot_article_edited", p)
+  expect_doppelganger("prediction_ggplot_article_edited", p)
 
   p <- plot.orm(test_model_001, cran_rzs,
                 plot_cols = c(max_SEP_3),
@@ -80,7 +85,7 @@ test_that("plotting test data accepts no quotes", {
                                                   "Skilled manual",
                                                   "Non-manual"))
   )
-  vdiffr::expect_doppelganger("prediction_ggplot_article_edited", p)
+  expect_doppelganger("prediction_ggplot_article_edited", p)
 })
 
 

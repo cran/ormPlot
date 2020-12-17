@@ -4,17 +4,24 @@
 \alias{plot.orm}
 \title{Plot the prediction with confidence intervals}
 \usage{
-\method{plot}{orm}(x, xval, plot_cols = c(), plot_rows = c(),
-  label_with_colname = TRUE, facet_labels = NULL, xlab = NULL,
-  ylab = NULL, np = 100, fun = stats::plogis, boot.type = "bca",
-  conf.int = 0.95, ...)
+\method{plot}{orm}(
+  x,
+  xval,
+  plot_cols = c(),
+  plot_rows = c(),
+  label_with_colname = TRUE,
+  facet_labels = NULL,
+  xlab = NULL,
+  ylab = NULL,
+  np = 100,
+  fun = stats::plogis,
+  boot.type = "bca",
+  conf.int = 0.95,
+  ...
+)
 }
 \arguments{
-\item{x}{
-	an \code{rms} fit object, or for \code{print} the result of \code{Predict}.
-	\code{options(datadist="d")} must have been specified (where
-	\code{d} was created by \code{datadist}), or 
-	it must have been in effect when the the model was fitted.}
+\item{x}{an object created by \code{Predict}}
 
 \item{xval}{The model value plotted on the x axis}
 
@@ -45,14 +52,17 @@ columns}
 	fit and you ran \code{bootcov} with \code{coef.reps=TRUE}.  This
 	will let the mean function be re-estimated for each bootstrap rep to
 	properly account for all sources of uncertainty in estimating the
-	mean response.}
+	mean response.  \code{fun} can be a general function and can compute
+	confidence limits (stored as a list in the \code{limits} attribute) of
+the transformed parameters such as means.}
 
 \item{boot.type}{set to \code{'bca'} to compute BCa confidence
 	limits or \code{'basic'} to use the basic bootstrap.  The default is
 	to compute percentile intervals}
 
 \item{conf.int}{
-	confidence level.  Default is 0.95.  Specify \code{FALSE} to suppress.}
+	confidence level (highest posterior density interval probability for
+	Bayesian models).  Default is 0.95.  Specify \code{FALSE} to suppress.}
 
 \item{...}{additional parameters that will be passed to \code{\link[rms]{Predict}}}
 }

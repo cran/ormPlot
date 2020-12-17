@@ -2,16 +2,16 @@ citHeader("To cite ormPlot or the bundled data in publications, please use:")
 
 
 citEntry(entry = "Article",
-  title        = "Morphometric traits predict educational attainment independently of socioeconomic background: evidence from Estonian children born between 1937 and 1962",
+  title        = "Morphometric traits predict educational attainment independently of socioeconomic background",
   author       = personList(as.person("Markus Valge"),
                             as.person("Richard Meitern"),
                             as.person("Peeter Hõrak")),
-  journal      = "TBA",
+  journal      = "BMC public health",
   year         = "2019",
-  volume       = "",
-  number       = "",
-  pages        = "",
-  url          = "",
+  volume       = "19",
+  number       = "1",
+  pages        = "1696",
+  url          = "https://doi.org/10.1186/s12889-019-8072-7",
 
-  textVersion  ="M. Valge, R. Meitern & P. Hõrak (2019) Morphometric traits predict educational attainment independently of socioeconomic background: evidence from Estonian children born between 1937 and 1962 in prep."
+  textVersion  ="Valge, M., Meitern, R. & Hõrak, P. Morphometric traits predict educational attainment independently of socioeconomic background. BMC Public Health 19, 1696 (2019). https://doi.org/10.1186/s12889-019-8072-7"
 )

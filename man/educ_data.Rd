@@ -4,7 +4,8 @@
 \name{educ_data}
 \alias{educ_data}
 \title{Morfometrics of children}
-\format{A data frame with 11032 rows and 10 variables:
+\format{
+A data frame with 11032 rows and 10 variables:
 \describe{
   \item{educ_3}{highest obtained educational level}
   \item{Rural}{location of school (rural or urban)}
@@ -18,7 +19,8 @@
   \item{YOBc}{centered but not scaled year of birth (YOB)}
 
 
-}}
+}
+}
 \usage{
 educ_data
 }

@@ -11,10 +11,19 @@
 \usage{
 \method{plot}{summary.rms}(x, ...)
 
-forestplot(x, return_ggplots = FALSE, plot.widths = c(0.5, 0.5),
-  title = "Odds ratio", digits = 3, shape = 19, header = NULL,
-  limits = NULL, breaks = c(0.5, 1, 1.5, 2, 3, 4),
-  theme = ggplot2::theme_get(), row.names.y = NULL)
+forestplot(
+  x,
+  return_ggplots = FALSE,
+  plot.widths = c(0.5, 0.5),
+  title = "Odds ratio",
+  digits = 3,
+  shape = 19,
+  header = NULL,
+  limits = NULL,
+  breaks = c(0.5, 1, 1.5, 2, 3, 4),
+  theme = ggplot2::theme_get(),
+  row.names.y = NULL
+)
 
 forestplot.default(x, ...)
 

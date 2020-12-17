@@ -4,9 +4,15 @@
 \alias{orm_graph}
 \title{Make a ggplot figure}
 \usage{
-orm_graph(x, theme = ggplot2::theme_get(), header = NULL,
-  row.names.y = NULL, shape = 19, limits = NULL, breaks = c(0.5, 1,
-  1.5, 2, 3, 4))
+orm_graph(
+  x,
+  theme = ggplot2::theme_get(),
+  header = NULL,
+  row.names.y = NULL,
+  shape = 19,
+  limits = NULL,
+  breaks = c(0.5, 1, 1.5, 2, 3, 4)
+)
 }
 \arguments{
 \item{x}{a \code{matrix} or a \code{data.frame}}
