@@ -218,3 +218,33 @@ convert_arg<-function(x){
 
     invisible(c(new_x))
 }
+
+#' Plot the prediction with confidence intervals
+#'
+#' This function plots the model predictions given that all variables that are
+#' not included in the plot are kept constant. Hence it requires at least one
+#' variable to produce a plot.
+#' returns a \code{ggplot} object that can be further customized like any
+#' other \code{ggplot}
+#
+#'
+#' @inheritParams plot.orm
+#'
+#'
+#' @return a \code{ggplot} plot object
+#'
+#' @example inst/examples/plot_orm.R
+#'
+#' @seealso \code{\link[rms]{Predict}}, \code{\link[rms]{datadist}}, \code{\link[rms]{orm}}
+#' @export
+plot.lrm <- function(x, ...) {
+    
+    newModel <- x
+    if(is.null(newModel$yunique)){
+        newModel$yunique <- unlist(dimnames(x$freq))
+        
+    }
+    plot.orm(newModel, ...)
+    
+}
+

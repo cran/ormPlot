@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' data-engine-version='2.0' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+</g>
+<defs>
+  <clipPath id='cpMi43NHw3MjAuMDB8MzMuMTZ8NTc2LjAw'>
+    <rect x='2.74' y='33.16' width='717.26' height='542.84' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMi43NHw3MjAuMDB8MzMuMTZ8NTc2LjAw)'>
+<line x1='194.92' y1='173.25' x2='214.14' y2='173.25' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='302.98' y1='348.36' x2='333.24' y2='348.36' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='284.02' y1='523.47' x2='310.20' y2='523.47' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<circle cx='204.41' cy='173.25' r='2.84' style='stroke-width: 1.42; fill: #000000;' />
+<circle cx='317.88' cy='348.36' r='2.84' style='stroke-width: 1.42; fill: #000000;' />
+<circle cx='296.93' cy='523.47' r='2.84' style='stroke-width: 1.42; fill: #000000;' />
+<line x1='252.69' y1='576.00' x2='252.69' y2='33.16' style='stroke-width: 1.07; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+<polyline points='2.74,33.16 720.00,33.16 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<text x='35.34' y='28.23' text-anchor='middle' style='font-size: 11.00px; font-family: sans;' textLength='15.29px' lengthAdjust='spacingAndGlyphs'>0.5</text>
+<text x='252.69' y='28.23' text-anchor='middle' style='font-size: 11.00px; font-family: sans;' textLength='15.29px' lengthAdjust='spacingAndGlyphs'>1.0</text>
+<text x='470.05' y='28.23' text-anchor='middle' style='font-size: 11.00px; font-family: sans;' textLength='15.29px' lengthAdjust='spacingAndGlyphs'>1.5</text>
+<text x='687.40' y='28.23' text-anchor='middle' style='font-size: 11.00px; font-family: sans;' textLength='15.29px' lengthAdjust='spacingAndGlyphs'>2.0</text>
+<polyline points='35.34,33.16 35.34,30.42 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='252.69,33.16 252.69,30.42 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='470.05,33.16 470.05,30.42 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='687.40,33.16 687.40,30.42 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='2.74,576.00 2.74,33.16 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<text x='2.74' y='9.91' style='font-size: 14.40px; font-family: sans;' textLength='157.70px' lengthAdjust='spacingAndGlyphs'>ggplot_limits_orm_graph</text>
+</g>
+</svg>

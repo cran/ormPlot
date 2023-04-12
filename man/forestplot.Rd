@@ -72,6 +72,7 @@ set.seed(123)
 #load the libraries
 library(rms)
 library(ormPlot)
+library(ggplot2)
 
 #make the datadist
 dd<-rms::datadist(educ_data)
