@@ -1,3 +1,6 @@
+# ormPlot 0.3.6
+* Package documentation file syntax update
+
 # ormPlot 0.3.5
 * Plotting lrm works now similar to plotting orm
 * Fixed missing dependency on ggplot2 in examples

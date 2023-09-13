@@ -1,3 +1,8 @@
+#' @keywords internal
+"_PACKAGE"
+
+## usethis namespace: start
+## usethis namespace: end
 #' ormPlot: Plotting ordinal regression models from \code{\link[rms]{rms}}
 #'
 #' The package is an extension to the \code{\link[rms]{rms}} package that
@@ -37,6 +42,5 @@
 #' \code{citation("ormPlot") article}
 #'
 #'
-#' @docType package
 #' @name ormPlot
 NULL
